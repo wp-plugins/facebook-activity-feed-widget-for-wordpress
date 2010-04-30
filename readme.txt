@@ -4,7 +4,7 @@ Tags: Facebook, social media, Social Plugins, Widget, Facebook Open Graph, Faceb
 Requires at least: 2.9
 Tested up to: 2.9
 Stable tag: trunk
-Version: 0.2
+Version: 0.2a
 
 A plugin that allows you to configure and display one or more FaceBook Activity Feed Widgets on the sidebar of your WordPress blog
 
@@ -16,10 +16,10 @@ The activity feed displays stories both when users <a href="http://developers.fa
 
 When setting up your widget, you'll want to setup the following parameters:
 
-*   **Domain ** - <br />The domain to show activity for. Defaults to the domain is the your blog's URL without the 'http://' or 'www.' attributes.
-*   **Width ** - <br />The width of the plugin in pixels. The defauilt is 180px.
-*   **Height ** - <br />The height of the plugin in pixels. The default is 300px.
-*   **Header ** - <br />Show the Facebook header on the plugin.
+*   **Domain** - <br />The domain to show activity for. Defaults to the domain is the your blog's URL without the 'http://' or 'www.' attributes.
+*   **Width** - <br />The width of the plugin in pixels. The defauilt is 180px.
+*   **Height** - <br />The height of the plugin in pixels. The default is 300px.
+*   **Header** - <br />Show the Facebook header on the plugin.
 *   **Color Scheme** - <br />The color scheme of the plugin. Choices are 'light', 'dark' and 'evil'.
 *   **Font** - <br />The font of the plugin.
 *   **iFrame CSS Class** - <br />A CSS class that is assigned to the iFrame so you can beter control the look and feel of the plugin.
@@ -57,6 +57,7 @@ This plugin follows the [standard WordPress installation method][]:
 2. How the Widget appears on a blog.
 
 == Changelog ==
+*   Version 0.2a - 30Apr10 - darn svn messed me up ... install should work now
 *   Version 0.2 - 30Apr10 - initial trunk
 *   Version 0.1 - 26Apr10 - beta release
 
