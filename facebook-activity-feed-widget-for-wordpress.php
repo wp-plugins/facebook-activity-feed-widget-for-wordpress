@@ -9,7 +9,7 @@ License: GPL
 Author: Dean Peters
 Author URI: http://HealYourChurchWebsite.com/
 Release Notes:
-2010-04-30 - v0.2a 
+2010-04-30 - v0.2b 
 * darn svn messed me up ... install should work now
 
 2010-04-30 - v0.2 - working version
