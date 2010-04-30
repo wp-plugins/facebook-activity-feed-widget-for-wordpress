@@ -1,17 +1,14 @@
 <?php
 /*
 Plugin Name: Facebook Activity Feed Widget for WordPress
-Plugin Script: facebook-activity-feed-widget-for-wordpress.php
+Plugin Script: fbActivityWidget.php
 Plugin URI: http://healyourchurchwebsite.com/2010/04/26/the-facebook-activity-widget-plugin-for-wordpress/
 Description: Allows you to configure and display a FaceBook Activity Feed Widget on the sidebar of your WordPress blog
-Version: 0.2b
+Version: 0.2
 License: GPL
 Author: Dean Peters
 Author URI: http://HealYourChurchWebsite.com/
 Release Notes:
-2010-04-30 - v0.2b 
-* darn svn messed me up ... install should work now
-
 2010-04-30 - v0.2 - working version
 * update & official 'trunk' release
 
@@ -54,7 +51,7 @@ class FaceBookActivityFeed extends WP_Widget {
         parent::WP_Widget(false, $name = 'FaceBook Activity Feed');	
 		
 		wp_enqueue_script('jscolor', 
-			WP_PLUGIN_URL."/facebook-activity-feed-widget-for-wordpress/jscolor/jscolor.js");
+			WP_PLUGIN_URL."/fbactivitywidget/jscolor/jscolor.js");
     }
 
     /** @see WP_Widget::widget */
@@ -137,7 +134,7 @@ class FaceBookActivityFeed extends WP_Widget {
 			$bordercolor = $bordercolor ? $bordercolor : "#CCCCCC";
 			
         ?>
-		<div id="facebook-activity-feed-widget-for-wordpressID<?php echo $widgetid; ?>" class="facebook-activity-feed-widget-for-wordpressParameters">
+		<div id="fbActivityWidgetID<?php echo $widgetid; ?>" class="fbActivityWidgetParameters">
             <p>
 				<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Widget Title:'); ?> 
 					<input	class="widefat" 
@@ -232,7 +229,7 @@ class FaceBookActivityFeed extends WP_Widget {
 								type="image" 
 								onClick="mfld='<?php echo $this->get_field_id('bordercolor');?>';v=this.value;if(v=='off'){document.getElementById(mfld).color.showPicker();this.value='on';return false;}else{document.getElementById(mfld).color.hidePicker();this.value='off';return false;};return;false;"
 								value="off" 
-								src="<?php echo WP_PLUGIN_URL."/facebook-activity-feed-widget-for-wordpress/"; ?>painticon.png" 
+								src="<?php echo WP_PLUGIN_URL."/fbactivitywidget/"; ?>painticon.png" 
 								alt="Show Paint Dialog" 
 								style="border-style: none; width: 16; height: 16; margin-left: 0; padding-left: 0; position: relative; top: 4px;"
 								>
@@ -243,7 +240,7 @@ class FaceBookActivityFeed extends WP_Widget {
 				// var mfld="<?php echo $this->get_field_id('bordercolor');?>";
 				// var myPicker = new jscolor.color(document.getElementById(myFldID), {hash:true,required:false,pickerPosition:'top'})
 			</script>
-		</div><!-- /#facebook-activity-feed-widget-for-wordpressParameters -->
+		</div><!-- /#fbActivityWidgetParameters -->
         <?php 
     }
 
