@@ -4,11 +4,14 @@ Plugin Name: Facebook Activity Feed Widget for WordPress
 Plugin Script: facebook-activity-feed-widget-for-wordpress.php
 Plugin URI: http://healyourchurchwebsite.com/2010/04/26/the-facebook-activity-widget-plugin-for-wordpress/
 Description: Allows you to configure and display a FaceBook Activity Feed Widget on the sidebar of your WordPress blog
-Version: 0.2b
+Version: 0.2c
 License: GPL
 Author: Dean Peters
 Author URI: http://HealYourChurchWebsite.com/
 Release Notes:
+
+2010-04-30 - v0.2b 
+* color picker is driving me nutso
 
 2010-04-30 - v0.2b 
 * darn svn messed me up ... install should work now
@@ -223,26 +226,34 @@ class FaceBookActivityFeed extends WP_Widget {
 
             <p>
 				<label for="<?php echo $this->get_field_id('bordercolor'); ?>"><?php _e('Border Color:'); ?> 
-					<input	class="fbact_color_picker {hash:true,required:false,pickerPosition:'top'}" 
+					<input	class="fbact_color_picker {hash:true,required:false,pickerPosition:'top'} widefat" 
 							id="<?php echo $this->get_field_id('bordercolor'); ?>" name="<?php echo $this->get_field_name('bordercolor'); ?>" 
 							type="text" 
-							style="width: 80%; margin-right: 0; padding-right: 0;";
 							value="<?php echo $bordercolor; ?>"  />
-							<input 
-								name="toggleColor" 
-								type="image" 
-								onClick="mfld='<?php echo $this->get_field_id('bordercolor');?>';v=this.value;if(v=='off'){document.getElementById(mfld).color.showPicker();this.value='on';return false;}else{document.getElementById(mfld).color.hidePicker();this.value='off';return false;};return;false;"
-								value="off" 
-								src="<?php echo WP_PLUGIN_URL."/facebook-activity-feed-widget-for-wordpress/"; ?>painticon.png" 
-								alt="Show Paint Dialog" 
-								style="border-style: none; width: 16; height: 16; margin-left: 0; padding-left: 0; position: relative; top: 4px;"
-								>
-				
 				</label>
 			</p>
 			<script type="text/javascript">
-				// var mfld="<?php echo $this->get_field_id('bordercolor');?>";
-				// var myPicker = new jscolor.color(document.getElementById(myFldID), {hash:true,required:false,pickerPosition:'top'})
+			/* * /
+				function initColorPicker() {
+					var mfld="<?php echo $this->get_field_id('bordercolor');?>";
+					var myPicker = new jscolor.color(document.getElementById(myFldID), {hash:true,required:false,pickerPosition:'top'});
+					return false;
+				}
+				initColorPicker();
+			/* */
+
+	jscolor.init();
+	var colorPickerArray = [];
+
+	jQuery('input.fbact_color_picker').each(function(index) {
+
+		var oldID = document.getElementById(jQuery(this).attr('id'));
+		var myCol = jQuery(this).val();
+		colorPickerArray[index] = new  jscolor.color(oldID, {hash:true,required:false,pickerPosition:'top'});
+		colorPickerArray[index].fromString((myCol) ? myCol : "#CCCCCF");
+	});
+
+
 			</script>
 		</div><!-- /#facebook-activity-feed-widget-for-wordpressParameters -->
         <?php 
