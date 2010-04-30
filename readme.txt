@@ -16,10 +16,10 @@ The activity feed displays stories both when users <a href="http://developers.fa
 
 When setting up your widget, you'll want to setup the following parameters:
 
-*   **Domain **- <br />The domain to show activity for. Defaults to the domain is the your blog's URL without the 'http://' or 'www.' attributes.
-*   **Width **- <br />The width of the plugin in pixels. The defauilt is 180px.
-*   **Height **- <br />The height of the plugin in pixels. The default is 300px.
-*   **Header **- <br />Show the Facebook header on the plugin.
+*   **Domain ** - <br />The domain to show activity for. Defaults to the domain is the your blog's URL without the 'http://' or 'www.' attributes.
+*   **Width ** - <br />The width of the plugin in pixels. The defauilt is 180px.
+*   **Height ** - <br />The height of the plugin in pixels. The default is 300px.
+*   **Header ** - <br />Show the Facebook header on the plugin.
 *   **Color Scheme** - <br />The color scheme of the plugin. Choices are 'light', 'dark' and 'evil'.
 *   **Font** - <br />The font of the plugin.
 *   **iFrame CSS Class** - <br />A CSS class that is assigned to the iFrame so you can beter control the look and feel of the plugin.
