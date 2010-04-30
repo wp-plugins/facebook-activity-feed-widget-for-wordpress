@@ -52,12 +52,13 @@ This plugin follows the [standard WordPress installation method][]:
 1.  Can I aggregate more than 1 Facebook Activity Feed in a single widget?<br />No, Facebook is clear that multiple activiy feeds are not available at this time.
 2.  Why is there a delay in displaying the widget?<br />Keep in mind that the widget is an iframe that reads data from Facebook's servers. So if their activity feed servers are slow, then you will notice a latency.
 3.  How do I get the popup for the color selector to close?<br />Just tab or move your cursor to another field, it'll close on its own.
+
 == Screenshots ==
 1. Screenshot of the widget setup screen.
 2. How the Widget appears on a blog.
 
 == Changelog ==
-*   Version 0.2b - 30Apr10 - darn svn messed me up, install should work now
+*   Version 0.2b - 30Apr10 - darn svn messed me up ... install should work now
 *   Version 0.2 - 30Apr10 - initial trunk
 *   Version 0.1 - 26Apr10 - beta release
 
