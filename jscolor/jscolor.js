@@ -831,10 +831,10 @@ var jscolor = {
 	}
 
 };
+jscolor.install();
 
 /* 
  * do it manually
- * jscolor.install();
  *
  * for example:
  * 		var myPicker = new jscolor.color(document.getElementById('<?php echo $this->get_field_id('bordercolor'); ?>'), {hash:true,required:false,pickerPosition:'top'})
@@ -852,11 +852,6 @@ jQuery(document).ready(function() {
 		colorPickerArray[index] = new  jscolor.color(oldID, {hash:true,required:false,pickerPosition:'top'});
 		colorPickerArray[index].fromString((myCol) ? myCol : "#CCCCCF");
 	});
-
-// http://buildinternet.com/2009/01/changing-form-input-styles-on-focus-with-jquery/
-// consider trapping the onfocus with 
-// document.getElementById('myColor').color.showPicker()
-// document.getElementById('myColor').color.hidePicker()
 
 
 /* */

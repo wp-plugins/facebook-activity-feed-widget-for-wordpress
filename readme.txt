@@ -58,6 +58,7 @@ This plugin follows the [standard WordPress installation method][]:
 2. How the Widget appears on a blog.
 
 == Changelog ==
+*   Version 0.2c - 30Apr10 - color picker was getting a bit buggy on me
 *   Version 0.2b - 30Apr10 - darn svn messed me up ... install should work now
 *   Version 0.2 - 30Apr10 - initial trunk
 *   Version 0.1 - 26Apr10 - beta release
