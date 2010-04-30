@@ -4,11 +4,14 @@ Plugin Name: Facebook Activity Feed Widget for WordPress
 Plugin Script: facebook-activity-feed-widget-for-wordpress.php
 Plugin URI: http://healyourchurchwebsite.com/2010/04/26/the-facebook-activity-widget-plugin-for-wordpress/
 Description: Allows you to configure and display a FaceBook Activity Feed Widget on the sidebar of your WordPress blog
-Version: 0.2
+Version: 0.2b
 License: GPL
 Author: Dean Peters
 Author URI: http://HealYourChurchWebsite.com/
 Release Notes:
+2010-04-30 - v0.2a 
+* darn svn messed me up ... install should work now
+
 2010-04-30 - v0.2 - working version
 * update & official 'trunk' release
 
